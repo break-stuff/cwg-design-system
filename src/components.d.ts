@@ -13,20 +13,6 @@ export namespace Components {
   interface CwgButton {
     'variant': any;
   }
-  interface MyComponent {
-    /**
-    * The first name
-    */
-    'first': string;
-    /**
-    * The last name
-    */
-    'last': string;
-    /**
-    * The middle name
-    */
-    'middle': string;
-  }
 }
 
 declare global {
@@ -37,15 +23,8 @@ declare global {
     prototype: HTMLCwgButtonElement;
     new (): HTMLCwgButtonElement;
   };
-
-  interface HTMLMyComponentElement extends Components.MyComponent, HTMLStencilElement {}
-  var HTMLMyComponentElement: {
-    prototype: HTMLMyComponentElement;
-    new (): HTMLMyComponentElement;
-  };
   interface HTMLElementTagNameMap {
     'cwg-button': HTMLCwgButtonElement;
-    'my-component': HTMLMyComponentElement;
   }
 }
 
@@ -53,24 +32,9 @@ declare namespace LocalJSX {
   interface CwgButton {
     'variant'?: any;
   }
-  interface MyComponent {
-    /**
-    * The first name
-    */
-    'first'?: string;
-    /**
-    * The last name
-    */
-    'last'?: string;
-    /**
-    * The middle name
-    */
-    'middle'?: string;
-  }
 
   interface IntrinsicElements {
     'cwg-button': CwgButton;
-    'my-component': MyComponent;
   }
 }
 
@@ -81,7 +45,6 @@ declare module "@stencil/core" {
   export namespace JSX {
     interface IntrinsicElements {
       'cwg-button': LocalJSX.CwgButton & JSXBase.HTMLAttributes<HTMLCwgButtonElement>;
-      'my-component': LocalJSX.MyComponent & JSXBase.HTMLAttributes<HTMLMyComponentElement>;
     }
   }
 }
