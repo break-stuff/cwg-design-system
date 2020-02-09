@@ -1,0 +1,18 @@
+@import '../00_Abstracts/index';
+    
+html,
+body {
+    font-size: $font-size-base;
+    line-height: $line-height-base;
+    @include font(base);
+
+    main {
+        max-width: $content-width;
+        @include mx(auto);
+    }
+
+    code,
+    pre {
+        @include font(monospace);
+    }
+}                            

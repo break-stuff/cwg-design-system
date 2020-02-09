@@ -1,0 +1,26 @@
+@import '../00_Abstracts/index';
+
+.button {
+    border: 0;
+    @include font-size(xxl);
+    @include p(sm);
+
+    @each $key, $value in $theme-colors {
+        &.#{$key} {
+            @include bg-color($key);
+
+            &:hover {
+                @include bg-color($key, lighter);
+            }
+
+            &.clear {
+                background-color: transparent;
+                color: color($key);
+
+                &:hover {
+                    color: color($key, lighter);
+                }
+            }
+        }
+    }
+}

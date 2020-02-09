@@ -10,5 +10,5 @@ export const playground = () => {
     const hollow = boolean('hollow', false);
     const clear = boolean('clear', false);
 
-    return (``)
+    return (`<button class="button ${type} ${clear ? 'clear' : ''}">Test Button</button>`)
 }

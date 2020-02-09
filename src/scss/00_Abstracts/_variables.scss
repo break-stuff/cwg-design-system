@@ -1,0 +1,121 @@
+// CONTAINERS
+$content-width: 600px !default;                    
+
+//   FONTS
+$font-size-base: 16px !default;
+
+$fonts: (
+    accent: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, Noto Sans, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"',
+    base: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, Noto Sans, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"',
+    monospace: 'SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace'
+) !default;
+
+$font-sizes: (
+    xxs: 0.75rem, // 12px
+    xs: 0.875rem, // 14px
+    sm: 1rem,     // 16px
+    md: 1.25rem,  // 30px
+    lg: 1.5rem,   // 24px
+    xl: 2rem,     // 32px
+    xxl: 3rem     // 48px
+) !default;
+
+$line-height-base: 1.5 !default;
+
+// SPACING
+
+$spacing-sizes: (
+    auto: auto,
+    none: 0,
+    3xs: 0.0625rem, // 1px
+    xxs: 0.125rem,  // 2px
+    xs: 0.25rem,    // 4px
+    sm: 0.5rem,     // 8px
+    md: 0.75rem,    // 12px
+    lg: 1rem,       // 16px
+    xl: 1.25rem,    // 20px
+    xxl: 2rem       // 32px
+) !default;
+
+
+// COLORS
+
+$theme-colors: (
+    primary: #d15f01,
+    secondary: #30629e,
+    success: #669c1f, 
+    info: #509BCE, 
+    warning: #B88A00, 
+    danger: #c70000, 
+    light: #ababab,
+    dark: #545454
+) !default;
+
+$color-variation: 8% !default;
+
+
+// BREAKPOINTS
+
+$breakpoints: (
+    xxs: 20rem,  // 320px
+    xs: 30rem,   // 480px
+    sm: 48rem,   // 768px
+    md: 62rem,   // 992px
+    lg: 75rem,   // 1200px
+    xl: 90rem    // 1440px
+) !default;
+
+
+// Z-INDEX
+
+$z-indexes: (
+    sub: -1,
+    none: 0,
+    xxs: 1,
+    xs: 10,
+    sm: 50,
+    md: 100,
+    lg: 200,
+    xl: 500,
+    trump: 99999
+) !default;
+
+
+// BORDERS
+
+$border: (
+    style: solid,
+    size: 3xs,    // from $spacing-sizes
+    color: light lighter
+) !default;
+
+$border-radiuses: (
+    none: 0,
+    sm: 0.25rem, // 4px
+    md: 0.5rem,  // 8px
+    lg: 0.75rem, // 12px
+    pill: 10rem,
+    circle: 50%
+) !default;
+
+
+//  SHADOWS
+
+$shadows: (
+    none: none,
+    inner: "inset 0 2px 4px 0 rgba(0, 0, 0, 0.06)",
+    outline: "0 0 0 3px rgba(0, 0, 0, 0.5)",
+    xs: "0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06)",
+    sm: "0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)",
+    md: "0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05)",
+    lg: "0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04)",
+    xl: "0 25px 50px -12px rgba(0, 0, 0, 0.25)"
+) !default;
+
+//  TRANSITIONS
+
+$transitions: (
+    slow: .5s,
+    med: .3s,
+    fast: .1s
+) !default;
